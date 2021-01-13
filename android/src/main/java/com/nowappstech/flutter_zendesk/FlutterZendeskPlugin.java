@@ -10,13 +10,11 @@ import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
-import zendesk.commonui.UiConfig;
 import zendesk.core.AnonymousIdentity;
 import zendesk.core.Identity;
 import zendesk.core.Zendesk;
 import zendesk.support.Support;
 import zendesk.support.guide.HelpCenterActivity;
-import zendesk.support.request.RequestActivity;
 
 public class FlutterZendeskPlugin implements MethodCallHandler {
 
@@ -44,7 +42,7 @@ public class FlutterZendeskPlugin implements MethodCallHandler {
             Zendesk.INSTANCE.setIdentity(identity);
             Support.INSTANCE.init(Zendesk.INSTANCE);
             HelpCenterActivity.builder()
-                    .withArticlesForSectionIds(list)
+                    .withArticlesForSectionIds(112233L, 223344L)
                     .show(mRegistrar.activity());
             result.success("Zendesk Initialized");
         } else {
