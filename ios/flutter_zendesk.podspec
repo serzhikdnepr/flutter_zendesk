@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.platform = '10.0'
   s.ios.deployment_target = '10.0'
 
-  s.dependency 'ZendeskSDK', '4.0.0'
+  s.dependency 'ZendeskSDK', '5.0.3'
 
 end
 
