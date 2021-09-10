@@ -23,9 +23,9 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   initPlugin() async {
     Map<String, String> param = {
-      "appId": "YOUR_APP_ID",
-      "clientId": "CLIENT_ID",
-      "url": "YOUR_URL",
+      "appId": "2cac82785416cd1670e6e486e36839df0c28107358b651f7",
+      "clientId": "mobile_sdk_client_e07fbef856f11f8839b2",
+      "url": "https://vendeex.zendesk.com",
     };
     try {
       String result =
