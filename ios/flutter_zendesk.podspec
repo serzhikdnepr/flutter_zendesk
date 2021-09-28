@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
   s.dependency 'Flutter'
   s.ios.vendored_frameworks = 'Frameworks/ZendeskSDK.framework'
   s.static_framework = true
-  s.platform = '10.0'
+  s.platform = '12.0'
   s.ios.deployment_target = '10.0'
-  s.dependency 'ZendeskSupportSDK', '5.2.0'
+  s.dependency 'ZendeskSupportSDK'
 
 end
 
